@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="riverwinds.org.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="page">
+            <div class="logo">
+                <a href="/"><img src="/images/logo.png" alt="Riverwinds Band"/></a>
+            </div>
+            <div class="header">
+                <img src="/images/header-bar.png"/>
+            </div>
+            <div class="leftCol" id="wrap">
+                <div class="menu">
+                    <ul>
+                    <li><a href="/mission">Our Mission</a></li>
+                    <li><a href="/support">Support the Band</a></li>
+                    <li><a href="/personnel">Personnel</a></li>
+                    <li><a href="/concerts">Concert Programs</a></li>
+                    <li><a href="/media">See and Hear RWB</a></li>
+                    <li><a href="/">Home</a></li>
+                    </ul>    
+                </div>                
+                <br/>
+                <span class="contact">
+                    For more information, contact:<br/>
+                    <b>John Werth</b><br/>
+                    Conductor & Music Director<br/>
+                    <a href="mailto:conductor@riverwindsband.org">conductor@riverwindsband.org</a>                    
+                </span>   
+            </div>
+     
+            <div class="subheader">
+                A Fully Orchestrated Symphonic Band Providing a Concert Experience to the Snoqualmie Valley.
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+            <div class="mission">
+                <asp:ContentPlaceHolder runat="server" ID="missionContent"/>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder runat="server" ID="DonateContent"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <%--<div id="donate">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="donateForm">
+            <input type="hidden" name="cmd" value="_donations"/>
+            <input type="hidden" name="business" value="donate@riverwindsband.org"/>
+            <input type="hidden" name="lc" value="US"/>
+            <input type="hidden" name="item_name" value="River Winds Band"/>
+            <input type="hidden" name="no_note" value="0"/>
+            <input type="hidden" name="currency_code" value="USD"/>
+            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"/>
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+        </form>                   
+    </div>--%>
+</body>
+</html>
