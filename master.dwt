@@ -54,7 +54,7 @@
 		
 		<div id="topnav">
 			<ul>
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="concerts.html">Concerts</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="musicians.html">Musicians</a></li>
