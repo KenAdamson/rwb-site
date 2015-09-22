@@ -3,7 +3,7 @@
 /* Color Legend */
 
 /* Reset */
-html, body, { 
+html, body { 
 	margin:0;
 	padding:0;
 	border:0;
@@ -19,9 +19,9 @@ table, tr, th, td, tbody, tfoot, thead {
     border:0;
     vertical-align:baseline;
     background:transparent; }
-img	{ margin:0; padding:0 border:0; }
+img	{ margin:0;padding: 0; border:0; }
 table { border-collapse:collapse; border-spacing:0; }
-input, select, textarea, form, fieldtest { margin:0;vertical-align padding:0; border:0; }
+input, select, textarea, form, fieldtest { margin:0; padding:0; border:0; }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
 h1, h2, h3, h4, h5, h6, p, li, blockquote, td, a, caption, em, strong, strike {	font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
@@ -131,7 +131,7 @@ caption			{ background:#efefef; }
 
 #banner				{  }
 
-#subbanner			{ width=100%; background-color:#555555; padding:5px; overflow:hidden; }
+#subbanner			{ width:100%; background-color:#555555; padding:5px; overflow:hidden; }
 #subbanner h3		{ color:#ffffff; font-size:18px; font-weight:bold; text-align:center; line-height:180%; }
 	
 #content			{ float:left; width:650px; padding:20px }
@@ -143,7 +143,7 @@ caption			{ background:#efefef; }
 #content-members	{ width:100%; padding:20px }
 #content-members h1	{ margin:0px 0px 20px 0px; font-size:32px; border-bottom:1px #ccc solid; padding:20px 0px; }
 #content-members p	{ margin:16px 0px; line-height:160% }
-#content-members ul	{ margin-left:0px; padding:0px 0px 10px 0px; font-size:18px; font-style:bold; }
+#content-members ul	{ margin-left:0px; padding:0px 0px 10px 0px; font-size:18px; font-weight:bold; }
 #content-members li	{ margin-left:10px; padding-left:10px; line-height:150%; }
 #content-members h2	{ margin:20px 0px 5px 0px; }
 #content-members img{ padding:4px; border:1px #888888 solid; margin:4px; }
